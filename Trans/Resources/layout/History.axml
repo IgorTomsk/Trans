@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_weight="0.07"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:id="@+id/linearLayout1">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="0.33"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout2"
+            android:minWidth="25px"
+            android:minHeight="25px">
+            <TextView
+                android:text="Что переводили"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView1"
+                android:gravity="center"
+                android:background="@android:color/holo_orange_light"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="0.33"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout3"
+            android:minWidth="25px"
+            android:minHeight="25px">
+            <TextView
+                android:text="Результат"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView2"
+                android:gravity="center"
+                android:background="@android:color/holo_orange_light"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.9"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:id="@+id/linearLayout1"
+        android:background="@android:color/white"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView" />
+    </LinearLayout>
+</LinearLayout>
